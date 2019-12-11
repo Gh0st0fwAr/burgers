@@ -1,0 +1,104 @@
+.wrbest {
+    background: url(../../img/layout/wrbestbg.png) center center / cover no-repeat;
+        
+    & .title {
+        color: $black;
+    } 
+
+}
+
+
+.container--wrbest {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.wrbest__advantages {
+    margin-top: rem(55px);
+    
+}
+
+.wrbest__text {
+    margin-top: rem(40px);
+
+    @include phones {
+        margin-left: 1rem;
+        margin-top: 0;
+
+    }
+
+}
+
+.wrbest__features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+
+    @include phones {
+        width: 100%;
+        flex-direction: row;
+        margin-bottom: rem(20px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+    }
+    
+    .wrbest__description {
+        padding-top: rem(25px);
+
+    }
+}
+
+.wrbest__icon {
+    width: rem(120px);
+    height: rem(100px);
+    align-items: center;
+    flex-shrink: 0;
+}
+
+
+
+
+.wrbest__list {
+    display: flex;
+
+    
+
+    .subtitle {
+        color:$black;
+        font-size: rem(24px);
+        text-align: center;
+
+        @include phones {
+            text-align: left;
+        }
+
+    }
+
+    .wrbest__description {
+        font:$description;
+        font-size: 14px;
+        font-weight: 300;
+        color: rgba(47, 50, 52, 0.8);
+        text-align: center;
+        line-height: 1.71;
+
+        @include phones {
+            text-align: left;
+            padding-top: 0.8rem;
+            line-height: 1.5;
+        }
+        
+    }
+
+    @include phones {
+        flex-direction: column;
+        
+    }
+
+}

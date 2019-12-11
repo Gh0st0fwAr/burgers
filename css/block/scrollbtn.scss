@@ -1,0 +1,14 @@
+.scrollbutton {
+    width: rem(29px);
+    height: rem(14px);
+    background: url(../../img/icons/arrow-scroll.svg) center center / contain no-repeat;
+    display: block;
+    cursor: pointer;
+
+    &:active {
+        opacity: 0.65;
+        cursor: none;
+    }
+
+}
+

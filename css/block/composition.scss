@@ -1,0 +1,85 @@
+.composition {
+    position: absolute;
+    left: 0;
+    top: 0;    
+    display: flex;
+
+}
+
+
+
+.composition__icon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: rem(90px);
+    height: rem(90px);
+    background-color: rgba($color: #e35028, $alpha: 0.4);
+    border-radius: rem(5px);
+
+    &:hover {
+        background-color: rgba($color: #e35028, $alpha: 1);
+        transition: 0.2s;
+    }
+
+    &:hover + .composition__hover {
+        opacity: 1;
+        transition: 0.4s;
+    }
+
+}
+
+.composition__pic {
+    width: rem(46px);
+    height: rem(44px);
+    
+}
+
+.composition__title {
+    color: white;
+    font: $title;
+    font-size: rem(14px);
+    margin-top: rem(9px);
+    text-transform: uppercase;
+}
+
+
+// hover
+
+.composition__hover {
+    opacity: 0;
+    
+}
+
+.composition__list {
+    width: rem(270px);
+    display: flex;
+    background-color: rgba($color: white, $alpha: 0.9);
+    padding: rem(18px) rem(22px);
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+.composition__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: rem(18px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.composition__stuff {
+    height: rem(44px);
+    width: (44px);
+    align-items: center;
+}
+
+.composition__desc {
+    margin-right: auto;
+    margin-left: rem(10px);
+}

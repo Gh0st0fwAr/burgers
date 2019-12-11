@@ -1,0 +1,56 @@
+.fixscroll {
+    position: fixed;
+    top: rem(91px);
+    right: rem(50px);
+
+    @include tablets {
+        display: none;
+        
+    }
+}
+
+.fixscroll__item {
+    width: rem(16px);
+    height: rem(16px);
+    border-radius: 50%;
+    border: solid rem(1px) transparent;
+    margin-bottom: rem(4px);
+    position: relative;
+    
+    
+
+    &--active {
+        border-color: white;
+        transition: 0.3s; 
+        
+    }
+
+    &::before {
+        width: rem(6px);
+        height: rem(6px);
+        content: "";
+        background: white;
+        position: absolute;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        
+       
+
+    }
+
+
+
+    &:last-child {
+        margin-bottom: rem(0px);
+
+    }
+
+
+}
+
+.fixscroll__item--active::before {
+    cursor: default;
+}

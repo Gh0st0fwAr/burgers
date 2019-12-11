@@ -1,0 +1,159 @@
+.team {
+    background: url(../../img/layout/team.png) center center / cover no-repeat;
+}
+
+.team__section {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background:rgba(47, 50, 52, 0.93);
+    
+    @include tablets {
+        width: 100%;
+
+    }
+    
+}
+
+.team__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0% 5% 0% 5%;
+
+    @include tablets {
+        align-items: center;
+    }
+}
+
+.team-acco {
+    margin-top: rem(40px);
+  
+}
+
+.team-acco__img {
+    width: rem(100px);
+    height: rem(100px);
+    flex-shrink: 0;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+
+
+.team-acco__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: rem(25px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+    
+    @include tablets {
+        align-items: center;
+    }
+
+    .team-acco__content {
+        height: 0;
+        overflow: hidden;
+
+        @include tablets {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+}
+
+.team-acco__trigger {
+    font: normal rem(14px)/1 'Gagalin', sans-serif;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.8s;
+ 
+    &::before {
+     content: "";
+     display: block;
+     border: rem(5px) solid transparent;	border-top: rem(6px) solid $orange;
+     margin-right: rem(4px);
+     
+    }
+ 
+ }
+
+
+.team-acco__item--active {
+    .team-acco__content {
+        height: 100%;
+    }
+    
+    .team-acco__trigger {
+       font: normal rem(14px)/1 'Gagalin', sans-serif;
+       color: $orange;
+       display: flex;
+       align-items: flex-end;
+    
+       &::before {
+        content: "";
+        display: block;
+        border: rem(5px) solid transparent;	border-bottom: rem(6px) solid $orange;
+        margin-right: rem(4px);
+        
+        
+       }
+    
+    }
+}
+
+
+.team-acco__content {
+   overflow: hidden;
+   height: 0;
+   color: white;
+   margin-top: rem(20px);
+   transition: 0.6s;
+}
+
+.team-acco__wrap {
+    display: flex;
+}
+
+.team-acco__fit {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+        
+}
+
+.team-acco__title {
+    font-weight: bold;
+}
+
+.team-acco__desc {
+    display: flex;
+    flex-direction: column;  
+    font: $description;
+    text-align: left;
+    margin-left: rem(10px);
+
+    @include tablets {
+        text-align: center;
+        width: 70%;
+    }
+        
+}
+
+.team-acco__port {
+    font-weight: 300;
+    line-height: 1.71;
+    margin-top: rem(10px);
+}
+

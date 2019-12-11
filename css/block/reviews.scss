@@ -1,0 +1,168 @@
+
+
+.reviews__list { 
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+@each $revimg in (rev1, rev2, rev3, rev4, rev5, rev6, rev7, rev8) {
+
+    .reviews__item--#{$revimg} {
+        background-image: url(../../img/layout/#{$revimg}.jpg);
+        
+    }
+
+}
+
+
+.reviews__item {
+    width: 25%;
+    height: 50%;    
+    filter: grayscale(100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    @include tablets {
+        width: 50%;
+        height: 25%;
+    }
+
+}
+
+.reviews__hover {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    padding-top: rem(20px);
+    padding-left: rem(19px);
+    padding-right: rem(33px);
+    opacity: 0;
+    
+
+    @include tablets {
+        text-align: center;
+        align-items: center;
+    }
+
+    @include phones {
+        padding: 0;
+        justify-content: center;
+    }
+
+
+    &:hover {
+        opacity: 1;
+        transition: 0.3s;
+    }
+
+    .reviews__title {
+        font-family: Gagalin, sans-serif;
+        font-size: rem(14px);
+        color: white;
+    }
+
+    .reviews__text {
+        font: $description;
+        color: white;
+        margin-top: rem(30px);
+        line-height: 1.71;
+        & p {
+            font-weight: 300;
+        }
+
+        @include tablets {
+            margin-top: rem(10px);
+            line-height: 1.2;
+        }
+
+        @include phones {
+            display: none;
+        }
+
+    }
+    
+    .reviews__btn {
+        margin-top: rem(17px);
+    }
+
+    .btn {
+        background-color: $black;
+        
+        &:active {
+            opacity: 0.7;
+        }
+        
+    }
+}
+
+
+// popup
+
+.popup {
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    padding: 30px 21px 30px 21px;
+    background-color: white;
+    border-radius: 5px;
+    flex-direction: column;
+    visibility: hidden;
+    will-change: auto;
+    
+
+}
+
+// .popup--animation {
+//     animation: popan;
+//     transition: 0.5s;
+
+//     @keyframes popan {
+//         from {
+//             top:50%;
+//             left: 50%;
+//             transform: translate(-50%,-50%);
+//             transform: scale(0);
+//         }
+
+//         to {
+//             top:50%;
+//             left: 50%;
+//             transform: translate(-50%,-50%);
+//             transform: scale(1);
+//         }
+//     }
+// }
+
+.popup__title {
+    font-family: Gagalin, sans-serif;
+    font-size: rem(14px);
+    color: black;
+    margin-bottom: 16px;
+}
+
+.popup__text {
+    font: $description;
+    color: black;    
+    line-height: 1.72;
+}
+
+.popup__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.popup--active {
+    visibility: visible;
+}
+
+

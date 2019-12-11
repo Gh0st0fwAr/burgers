@@ -1,0 +1,108 @@
+.menu {
+    background: url('../../img/layout/menubg.png') center center / cover no-repeat;
+    position: relative;
+}
+
+.title--menu {
+    position: absolute;
+    top: rem(50px);
+    left: rem(50px);
+
+}
+
+.menu__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.menu-acco {
+    position: relative;
+    height: 100%;
+    display: flex;
+    transition: 0.8s;
+    
+}
+
+.menu-acco__item {
+    height: 100%;
+    display: flex;
+        
+}
+
+.title--menu {
+    color: white;
+}
+
+
+.menu-acco__vert--meat {
+    background-image: url(../../img/layout/menumeat.png);
+    
+}
+
+.menu-acco__vert--veg {
+    background-image: url(../../img/layout/menuveg.png);
+}
+
+.menu-acco__vert--diet {
+    background-image: url(../../img/layout/menudiet.png);
+}
+
+.menu-acco__vert {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+}
+
+.menu-acco__title {
+    text-transform: uppercase;
+    color: white;
+    font: $title;
+    font-size: rem(35px);
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    padding: rem(40px) rem(15px) rem(0px) rem(15px);
+    height: 100%;    
+    background-color: rgba(47, 50, 52, 0.83);
+    
+
+    @include phones {
+        padding: rem(40px) rem(8px) rem(0px) rem(8px);
+    }
+}
+
+.menu-acco__link {
+    cursor: pointer;
+    
+}
+
+.menu-acco__desc {
+    font: $description;
+    color: white;
+    background-color: rgba(47, 50, 52, 0.83);
+    overflow: hidden;
+    width: 0;
+    transition: 0.8s;
+
+}
+
+.menu-acco__par {
+    padding: 5% 5% 0% 5%;
+    
+}
+
+
+.menu-acco__item--active {
+
+    .menu-acco__title {
+        color: $orange;
+    }
+
+    .menu-acco__desc {
+        width: 540px;
+               
+    }
+}
+

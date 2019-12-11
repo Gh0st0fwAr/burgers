@@ -1,0 +1,99 @@
+.map {
+    position: relative;
+}
+
+.map__img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(../../img/layout/footerbg.png) center center/ cover no-repeat;
+    padding: rem(10px) rem(0px);
+    
+}
+
+.container--footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+       
+        .footer__block--com {
+            margin-top: 0.5rem;
+        }
+    }
+
+}
+
+.footer__block {
+    display: flex;
+}
+
+.footer__block--add {
+    flex-direction: column;
+    font: $description;
+    
+}
+
+
+.footer__block--com {
+    align-items: center;    
+
+}
+
+.footer__social {
+    display: flex;    
+    
+}
+
+.footer__links {
+    margin-right: 1rem;
+
+    &:last-child {
+        margin-right: 0;
+
+    }
+
+}
+
+
+
+.footer__adress {
+    font-weight: 300;
+    color: white;
+    line-height: 2;
+
+}
+
+.footer__tel {
+    font-weight: bold;
+    color: #e45028;
+
+}
+
+.footer__icon {
+    align-items: center;
+    height: rem(23px);
+    width: rem(23px);
+    cursor: pointer;
+    opacity: (0.3);
+    flex-shrink: 1;
+    
+    &:hover {
+        opacity: (1);
+        transition: 0.2s;
+    }
+
+}
+

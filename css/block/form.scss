@@ -1,0 +1,264 @@
+.delivery { 
+    background: url(../../img/layout/formbg.jpg) center center/ cover no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title--form {
+    text-align: center;
+
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    padding: 0 7%;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        
+    }    
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        margin-right: 2rem;
+        width: 100%;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @include tablets {
+            margin-right: 0;
+        }
+
+        
+    }
+
+    &__row {
+        display: flex;
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        margin-right: rem(20px);
+        width: 100%;
+
+        &:last-child {
+            margin-right: 0;
+        }
+        
+    }
+
+    &__desc {
+        font: $description;
+        font-weight: 300;
+        color: white;
+        line-height: 2.5;
+        
+    }
+
+    &__input {
+        border-radius: rem(5px);
+        border: solid rem(1px) #d1cfcb;
+        padding-top: rem(8px);
+        padding-bottom: rem(8px);
+        width: 100%;
+        outline: none;
+        border: solid rem(3px) transparent;
+
+        &--comment {
+            height: 6.7rem;
+            resize: none;
+        }
+        
+
+        &:focus {
+            border: solid rem(3px) $orange;
+        }
+        
+    }
+
+}
+
+.form__col--floor {
+    @include phones {
+        display: none;
+    }
+}
+
+.form__col--room {
+    @include phones {
+        margin-right: 0;
+    }
+}
+
+.form__block--adph {
+    @include phones {
+        align-items: center;
+
+        .form__col {
+            margin-right: 0;
+        }
+
+    }
+}
+
+
+// Радиокнопки 
+
+.form__payment {
+    display: flex;
+    margin-right: 1rem;
+    align-items: center;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+}
+
+.form__radio {
+    display: flex;
+    margin-top: 0.7rem;
+
+}
+
+.form__rd {
+    display: none;
+}
+
+
+.form__custom {
+    position: relative;
+    content: "";
+    display: block;
+    width: rem(16px);
+    height: rem(16px);
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 0.7rem;
+}
+
+
+.form__custom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: rem(8px);
+    height: rem(8px);
+    background-color: #e35028;
+    border-radius: 50%;
+    top: 50%;    
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: (0);
+
+}
+
+.form__rd:checked + .form__custom::before {
+    opacity: (1);
+    transition: 0.2s;
+}
+
+// Чекбокс 
+
+.form__checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.form__check {
+    display: none;
+
+}
+
+.form__boxcustom {
+    position: relative;
+    content: "";
+    display: block;
+    width: rem(16px);
+    height: rem(16px);
+    background-color: white;
+    margin-right: 0.7rem;
+}
+
+.form__boxcustom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: rem(10px);
+    height: rem(5px);
+    border-radius: rem(1px);
+    border-left: rem(4px) solid #e35028;
+    border-bottom: rem(4px) solid #e35028;
+    transform: rotate(315deg);
+    top: rem(2px);    
+    left: rem(1px);    
+    opacity: (0);
+    
+}
+
+.form__check:checked + .form__boxcustom::before {
+    opacity: (1);
+    transition: 0.2s;
+}
+
+//Кнопка 
+
+.form__buttons {
+    margin-top: 1rem;
+}
+
+.btn--form {
+    background-color: #e35028;
+}
+
+.btn--clear {
+    background-color: transparent;
+    text-transform: none;
+    font-weight: 300;
+}
+
+
+
+// Модалка
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    transform: translate(-50%, -50%);
+    width: 196px;
+    height: 106px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 1, 0.5);
+    font: $description;
+    opacity: 0;
+    
+
+}
+
+.modal--active {
+    left: 50%;
+    opacity: 1;
+    transition: opacity 0.6s;
+}
+
+
+.btn--modal {
+    margin-top: 17px;
+
+}
+

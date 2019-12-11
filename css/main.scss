@@ -1,0 +1,45 @@
+
+
+//colors
+$orange: #f9b43b;
+$black: #2f3234;
+
+
+
+//normalize
+@import "normalize.scss";
+
+
+//media
+@import "media.scss";
+
+//fonts
+$title: normal rem(72px)/1 'Gagalin', sans-serif;
+$subtitle: normal rem(14px)/1 'Lifehack', sans-serif;
+$description: normal rem(14px)/1 'Ubuntu', sans-serif;
+
+
+//base
+@import "base.scss";
+@import "fonts.scss";
+@import "addition.scss";
+
+
+
+
+@import "block/fixscroll.scss";
+@import "block/header.scss";
+@import "block/nav.scss";
+@import "block/intro.scss";
+@import "block/wrbest.scss";
+@import "block/reviews.scss";
+@import "block/scrollbtn.scss";
+@import "block/team.scss";
+@import "block/menu.scss";
+@import "block/ourworks.scss";
+@import "block/form.scss";
+@import "block/footer.scss";
+@import "block/slider.scss";
+@import "block/composition.scss";
+@import "block/cal.scss";
+
