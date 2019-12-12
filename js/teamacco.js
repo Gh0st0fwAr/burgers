@@ -21,13 +21,6 @@ function accordeonTeam() {
                 }
             };
 
-            // for (const iterator of workers) {
-            //     if (iterator != item) {
-            //         iterator.classList.remove("menu-acco__item--active");
-            //         menuAcco.style.transform = 'translateX(0)';
-            //         iterator.lastElementChild.style.width = 0;
-            //     }
-            // }
 
             if (worker.classList.contains("team-acco__item--active")) {
                 worker.classList.remove("team-acco__item--active");

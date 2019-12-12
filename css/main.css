@@ -758,7 +758,7 @@ html, body {
   background-color: white; }
 
 .intro {
-  background: url(../../img/layout/introbg.png) center center/cover no-repeat;
+  background: url(../img/layout/introbg.png) center center/cover no-repeat;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -863,7 +863,7 @@ html, body {
   align-self: center; }
 
 .wrbest {
-  background: url(../../img/layout/wrbestbg.png) center center/cover no-repeat; }
+  background: url(../img/layout/wrbestbg.png) center center/cover no-repeat; }
   .wrbest .title {
     color: #2f3234; }
 
@@ -962,28 +962,28 @@ html, body {
   flex-wrap: wrap; }
 
 .reviews__item--rev1 {
-  background-image: url(../../img/layout/rev1.jpg); }
+  background-image: url(../img/layout/rev1.jpg); }
 
 .reviews__item--rev2 {
-  background-image: url(../../img/layout/rev2.jpg); }
+  background-image: url(../img/layout/rev2.jpg); }
 
 .reviews__item--rev3 {
-  background-image: url(../../img/layout/rev3.jpg); }
+  background-image: url(../img/layout/rev3.jpg); }
 
 .reviews__item--rev4 {
-  background-image: url(../../img/layout/rev4.jpg); }
+  background-image: url(../img/layout/rev4.jpg); }
 
 .reviews__item--rev5 {
-  background-image: url(../../img/layout/rev5.jpg); }
+  background-image: url(../img/layout/rev5.jpg); }
 
 .reviews__item--rev6 {
-  background-image: url(../../img/layout/rev6.jpg); }
+  background-image: url(../img/layout/rev6.jpg); }
 
 .reviews__item--rev7 {
-  background-image: url(../../img/layout/rev7.jpg); }
+  background-image: url(../img/layout/rev7.jpg); }
 
 .reviews__item--rev8 {
-  background-image: url(../../img/layout/rev8.jpg); }
+  background-image: url(../img/layout/rev8.jpg); }
 
 .reviews__item {
   width: 25%;
@@ -1102,7 +1102,7 @@ html, body {
 .scrollbutton {
   width: 1.8125rem;
   height: 0.875rem;
-  background: url(../../img/icons/arrow-scroll.svg) center center/contain no-repeat;
+  background: url(../img/icons/arrow-scroll.svg) center center/contain no-repeat;
   display: block;
   cursor: pointer; }
   .scrollbutton:active {
@@ -1110,7 +1110,7 @@ html, body {
     cursor: none; }
 
 .team {
-  background: url(../../img/layout/team.png) center center/cover no-repeat; }
+  background: url(../img/layout/team.png) center center/cover no-repeat; }
 
 .team__section {
   position: absolute;
@@ -1269,7 +1269,7 @@ html, body {
   margin-top: 0.625rem; }
 
 .menu {
-  background: url("../../img/layout/menubg.png") center center/cover no-repeat;
+  background: url("../img/layout/menubg.png") center center/cover no-repeat;
   position: relative; }
 
 .title--menu {
@@ -1306,13 +1306,13 @@ html, body {
   color: white; }
 
 .menu-acco__vert--meat {
-  background-image: url(../../img/layout/menumeat.png); }
+  background-image: url(../img/layout/menumeat.png); }
 
 .menu-acco__vert--veg {
-  background-image: url(../../img/layout/menuveg.png); }
+  background-image: url(../img/layout/menuveg.png); }
 
 .menu-acco__vert--diet {
-  background-image: url(../../img/layout/menudiet.png); }
+  background-image: url(../img/layout/menudiet.png); }
 
 .menu-acco__vert {
   background-repeat: no-repeat;
@@ -1360,7 +1360,7 @@ html, body {
   width: 540px; }
 
 .ourworks {
-  background: url(../../img/layout/ourworks.jpg) center center/cover no-repeat;
+  background: url(../img/layout/ourworks.jpg) center center/cover no-repeat;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1494,7 +1494,7 @@ html, body {
   margin-right: 20px; }
 
 .delivery {
-  background: url(../../img/layout/formbg.jpg) center center/cover no-repeat;
+  background: url(../img/layout/formbg.jpg) center center/cover no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1751,7 +1751,7 @@ html, body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: url(../../img/layout/footerbg.png) center center/cover no-repeat;
+  background: url(../img/layout/footerbg.png) center center/cover no-repeat;
   padding: 0.625rem 0rem; }
 
 .container--footer {
@@ -1974,7 +1974,7 @@ html, body {
   content: "";
   width: 13px;
   height: 27px;
-  background: url(../../img/layout/arrow-scroll.svg) no-repeat;
+  background: url(../img/layout/arrow-scroll.svg) no-repeat;
   left: -15px;
   position: relative; }
 
@@ -1983,7 +1983,7 @@ html, body {
   content: "";
   width: 13px;
   height: 27px;
-  background: url(../../img/layout/arrow-scroll.svg) no-repeat;
+  background: url(../img/layout/arrow-scroll.svg) no-repeat;
   position: relative;
   -webkit-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
