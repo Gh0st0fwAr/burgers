@@ -20,7 +20,7 @@ function init() {
         // Необходимо указать данный тип макета.
         iconLayout: 'default#image',
         // Своё изображение иконки метки.
-        iconImageHref: '../img/icons/map-marker.svg',
+        iconImageHref: 'burgers/img/icons/map-marker.svg',
         // Размеры метки.
         iconImageSize: [46, 57],
         // Смещение левого верхнего угла иконки относительно
@@ -33,7 +33,7 @@ function init() {
         balloonContent: 'Другое описание ресторана',
     }, {
         iconLayout: 'default#image',
-        iconImageHref: '../img/icons/map-marker.svg',
+        iconImageHref: 'burgers/img/icons/map-marker.svg',
         iconImageSize: [46, 57],
         iconImageOffset: [-23, -57]
     });
@@ -43,7 +43,7 @@ function init() {
         balloonContent: 'Не лучшая станция метро',
     }, {
         iconLayout: 'default#image',
-        iconImageHref: '../img/icons/map-marker.svg',
+        iconImageHref: 'burgers/img/icons/map-marker.svg',
         iconImageSize: [46, 57],
         iconImageOffset: [-23, -57]
     });
@@ -53,7 +53,7 @@ function init() {
         balloonContent: 'Какому гению вообще пришло в голову строить ресторан на канонерке?',
     }, {
         iconLayout: 'default#image',
-        iconImageHref: '../img/icons/map-marker.svg',
+        iconImageHref: 'burgers/img/icons/map-marker.svg',
         iconImageSize: [46, 57],
         iconImageOffset: [-23, -57]
     });
